@@ -1,0 +1,8 @@
+PART-B CODE 
+.dc lin source V1  0  5 0.1
+.tran 10n 100n
+.lib “D:\back up\IMS\VTU_legacy\INV\Generic-025.lib” tt
+V1 IN GND dc  5  BIT ({1000111})
+V2 Vdd GND 5
+.print tran v(IN) v(OUT)
+.print dc v(OUT)
